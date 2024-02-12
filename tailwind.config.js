@@ -2,7 +2,10 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/main.tsx",
+    "./src/components/buttons.tsx",
+    "./src/components/switch.tsx",
+    "./src/components/volume-bar.tsx",
   ],
   theme: {
     extend: {},
