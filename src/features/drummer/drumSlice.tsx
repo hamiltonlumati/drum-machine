@@ -5,7 +5,7 @@ export interface DrumState{
 }
 
 const initialState: DrumState = {
-    key: "none"
+    key: ""
 }
 
 export const drumSlice = createSlice({
