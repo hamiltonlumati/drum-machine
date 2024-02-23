@@ -1,7 +1,9 @@
+import Keys from "../components/keys";
+
 function Screen(){
     return (
         <div>
-            <p>Hello World!</p>
+            <Keys />
         </div>
     )
 }

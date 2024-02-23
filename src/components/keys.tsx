@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import {Q, W, E, A, S, D, Z, X, C} from '../features/drummer/drumSlice'
 
-function Buttons(){
+function Keys(){
     const dispatch = useDispatch();
 
     return (
@@ -18,4 +18,4 @@ function Buttons(){
         </div>
     )
 }
-export default Buttons;
+export default Keys;
