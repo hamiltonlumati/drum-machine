@@ -12,7 +12,6 @@ function Buttons(){
             <button className="box-border h-32 w-32 p-4 bg-red-500">Test</button>
             <button className="box-border h-32 w-32 p-4 bg-red-500">Test</button>
             <button className="box-border h-32 w-32 p-4 bg-red-500">Test</button>
-
         </div>
     )
 }
