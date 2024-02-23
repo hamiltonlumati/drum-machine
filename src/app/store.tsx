@@ -1,7 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
+import drumReducer from '../features/drummer/drumSlice'
 
 export const store = configureStore({
-    reducer: {},
+    reducer: {
+      drum: drumReducer,
+    },
   })
   
   // Infer the `RootState` and `AppDispatch` types from the store itself
