@@ -4,8 +4,8 @@ import DisplayGroup from "../components/displayGroup";
 function Screen(){
     return (
         <div>
-            <Keys />
             <DisplayGroup />
+            <Keys />
         </div>
     )
 }
