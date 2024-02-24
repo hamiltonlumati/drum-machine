@@ -63,7 +63,6 @@ export const drumSlice = createSlice({
             var audio = new Audio('https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3');
             audio.play();
             state.key = "Closed-HH";
-
         }
     }
 })
