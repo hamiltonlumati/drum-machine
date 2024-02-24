@@ -4,7 +4,7 @@ import {Q, W, E, A, S, D, Z, X, C} from '../features/drummer/drumSlice'
 function Keys(){
     const dispatch = useDispatch();
 
-    var addEvent = document.addEventListener ? function(target : Document,type: String, action: boolean){
+    var addEvent = document.addEventListener ? function(target: DocumentEventMap,type: String, action: boolean){
         if(target){
             target.addEventListener(type,action,false);
         }
@@ -17,8 +17,49 @@ function Keys(){
     addEvent(document,'keydown',function(e){
         e = e || window.event;
         var key = e.which || e.keyCode;
+        //Q
         if(key===81){
             dispatch(Q());
+        }
+
+        //W
+        if(key===87){
+            dispatch(W());
+        }
+
+        //E
+        if(key===69){
+            dispatch(E());
+        }
+
+        //A
+        if(key===65){
+            dispatch(A());
+        }
+
+        //S
+        if(key===83){
+            dispatch(S());
+        }
+
+        //D
+        if(key===68){
+            dispatch(D());
+        }
+
+        //Z
+        if(key===90){
+            dispatch(Z());
+        }
+
+        //X
+        if(key===88){
+            dispatch(X());
+        }
+
+        //C
+        if(key===67){
+            dispatch(C());
         }
     });
 
