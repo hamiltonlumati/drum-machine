@@ -4,6 +4,24 @@ import {Q, W, E, A, S, D, Z, X, C} from '../features/drummer/drumSlice'
 function Keys(){
     const dispatch = useDispatch();
 
+    var addEvent = document.addEventListener ? function(target : Document,type: String, action: boolean){
+        if(target){
+            target.addEventListener(type,action,false);
+        }
+    } : function(target: Document,type: String,action: boolean){
+        if(target){
+            target.attachEvent('on' + type,action,false);
+        }
+    }
+    
+    addEvent(document,'keydown',function(e){
+        e = e || window.event;
+        var key = e.which || e.keyCode;
+        if(key===81){
+            dispatch(Q());
+        }
+    });
+
     return (
         <div className="grid grid-cols-3 gap-2 w-52">
             <button className="box-border h-16 w-16 p-4 bg-red-500" onClick={()=> dispatch(Q())}>Q</button>
