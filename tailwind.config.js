@@ -6,6 +6,7 @@ export default {
     "./src/components/keys.tsx",
     "./src/components/display.tsx",
     "./src/components/author.tsx",
+    "./src/components/title.tsx",
     "./src/layout/screen.tsx"
   ],
   theme: {
