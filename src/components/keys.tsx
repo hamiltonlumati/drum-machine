@@ -8,8 +8,6 @@ declare global {
     }
 }
 
-
-
 function Keys(){
     const dispatch = useDispatch();
 
@@ -69,7 +67,7 @@ function Keys(){
     })
     
     return (
-        <div className="grid grid-cols-3 gap-2 w-52">
+        <div className="grid grid-cols-3 gap-2 w-52 basis-52">
             <button className="box-border h-16 w-16 p-4 bg-red-500" onClick={()=> dispatch(Q())}>Q</button>
             <button className="box-border h-16 w-16 p-4 bg-red-500" onClick={()=> dispatch(W())}>W</button>
             <button className="box-border h-16 w-16 p-4 bg-red-500" onClick={()=> dispatch(E())}>E</button>

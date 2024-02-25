@@ -1,10 +1,10 @@
 import Keys from "../components/keys";
-import DisplayGroup from "../components/displayGroup";
+import Display from "../components/display";
 
 function Screen(){
     return (
-        <div>
-            <DisplayGroup />
+        <div className="p-2 flex flex-col gap-2 h-fit w-fit bg-slate-500">
+            <Display />
             <Keys />
         </div>
     )
