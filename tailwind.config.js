@@ -5,8 +5,7 @@ export default {
     "./src/main.tsx",
     "./src/components/keys.tsx",
     "./src/components/display.tsx",
-    "./src/components/switch.tsx",
-    "./src/components/volume-bar.tsx",
+    "./src/components/author.tsx",
     "./src/layout/screen.tsx"
   ],
   theme: {
