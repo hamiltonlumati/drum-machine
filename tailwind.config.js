@@ -11,8 +11,8 @@ export default {
   ],
   theme: {
     fontFamily: {
-      'sans': ['Helvetica', 'Arial', 'sans-serif'],
-    },
+      sans: ['Graphik', 'sans-serif'],
+      serif: ['Merriweather', 'serif'],    },
     extend: {},
   },
   plugins: [],
