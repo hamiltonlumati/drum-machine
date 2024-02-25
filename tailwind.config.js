@@ -10,6 +10,9 @@ export default {
     "./src/layout/screen.tsx"
   ],
   theme: {
+    fontFamily: {
+      'sans': ['Helvetica', 'Arial', 'sans-serif'],
+    },
     extend: {},
   },
   plugins: [],
