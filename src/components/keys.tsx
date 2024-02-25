@@ -13,47 +13,47 @@ function Keys(){
 
     const handleUserKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
         const { key } = event
-        if(key==='Q'){
+        if(key=== 'Q' || key === 'q'){
             dispatch(Q());
         }
 
         //W
-        if(key==='W'){
+        if(key === 'W' || key === 'w'){
             dispatch(W());
         }
 
         //E
-        if(key==='E'){
+        if(key === 'E' || key === 'e'){
             dispatch(E());
         }
 
         //A
-        if(key==='A'){
+        if(key === 'A' || key === 'a'){
             dispatch(A());
         }
 
         //S
-        if(key==='S'){
+        if(key === 'S' || key === 's'){
             dispatch(S());
         }
 
         //D
-        if(key==='D'){
+        if(key === 'D' || key === 'd'){
             dispatch(D());
         }
 
         //Z
-        if(key==='Z'){
+        if(key === 'Z' || key === 'z'){
             dispatch(Z());
         }
 
         //X
-        if(key==='X'){
+        if(key === 'X' || key === 'x'){
             dispatch(X());
         }
 
         //C
-        if(key==='C'){
+        if(key === 'C' || key === 'c'){
             dispatch(C());
         }
     }
