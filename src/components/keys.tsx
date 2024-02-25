@@ -57,6 +57,8 @@ function Keys(){
             dispatch(C());
         }
     }
+
+    var keyClass: string = 'box-border rounded drop-shadow-lg h-16 w-16 p-4 bg-red-500 focus:drop-shadow-none';
     
     useEffect(() => {
         window.addEventListener('keydown', handleUserKeyPress)
@@ -68,15 +70,15 @@ function Keys(){
     
     return (
         <div className="grid grid-cols-3 gap-2 w-52 basis-52">
-            <button className="box-border h-16 w-16 p-4 bg-red-500" onClick={()=> dispatch(Q())}>Q</button>
-            <button className="box-border h-16 w-16 p-4 bg-red-500" onClick={()=> dispatch(W())}>W</button>
-            <button className="box-border h-16 w-16 p-4 bg-red-500" onClick={()=> dispatch(E())}>E</button>
-            <button className="box-border h-16 w-16 p-4 bg-red-500" onClick={()=> dispatch(A())}>A</button>
-            <button className="box-border h-16 w-16 p-4 bg-red-500" onClick={()=> dispatch(S())}>S</button>
-            <button className="box-border h-16 w-16 p-4 bg-red-500" onClick={()=> dispatch(D())}>D</button>
-            <button className="box-border h-16 w-16 p-4 bg-red-500" onClick={()=> dispatch(Z())}>Z</button>
-            <button className="box-border h-16 w-16 p-4 bg-red-500" onClick={()=> dispatch(X())}>X</button>
-            <button className="box-border h-16 w-16 p-4 bg-red-500" onClick={()=> dispatch(C())}>C</button>
+            <button className={keyClass} onClick={()=> dispatch(Q())}>Q</button>
+            <button className={keyClass} onClick={()=> dispatch(W())}>W</button>
+            <button className={keyClass} onClick={()=> dispatch(E())}>E</button>
+            <button className={keyClass} onClick={()=> dispatch(A())}>A</button>
+            <button className={keyClass} onClick={()=> dispatch(S())}>S</button>
+            <button className={keyClass} onClick={()=> dispatch(D())}>D</button>
+            <button className={keyClass} onClick={()=> dispatch(Z())}>Z</button>
+            <button className={keyClass} onClick={()=> dispatch(X())}>X</button>
+            <button className={keyClass} onClick={()=> dispatch(C())}>C</button>
         </div>
     )
 }
