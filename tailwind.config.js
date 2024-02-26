@@ -10,9 +10,6 @@ export default {
     "./src/layout/screen.tsx"
   ],
   theme: {
-    fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],    },
     extend: {},
   },
   plugins: [],
