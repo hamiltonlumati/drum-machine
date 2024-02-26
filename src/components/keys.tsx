@@ -58,7 +58,7 @@ function Keys(){
         }
     }
 
-    var keyClass: string = 'drum-pad box-border rounded drop-shadow-2xl h-16 w-16 p-4 bg-red-500  active:drop-shadow-none active:border-red-400';
+    var keyClass: string = 'drum-pad rounded drop-shadow-2xl h-16 w-16 p-4 bg-blue  active:drop-shadow-none focus:border-yellow focus:border';
     
     useEffect(() => {
         window.addEventListener('keydown', handleUserKeyPress)
